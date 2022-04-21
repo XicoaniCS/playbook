@@ -10,4 +10,21 @@ console.log(explorer)
 
 console.log("Accediendo a las propiedades del objeto")
 console.log(explorer.age)
-console.log(explorer["agess"])
+console.log(explorer["age"])
+
+console.log("Ejemplo 3: Objeto con métodos")
+
+const ajolonauta = {
+    name: "Woopa",
+    mission: "Node JS",
+    sayHellowToExplorers: function() {
+        console.log("Soy el ajolonauta, Qué onda?!")
+    },
+    tellMeMore: function() {
+        console.log(`Ajolonauta: ${this.name}`)
+    }
+}
+console.log("Ajolonauta:")
+console.log(ajolonauta)
+ajolonauta.sayHellowToExplorers()
+console.log(ajolonauta.tellMeMore())
