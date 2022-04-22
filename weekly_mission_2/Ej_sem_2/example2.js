@@ -81,3 +81,11 @@ console.log(first_explorer_in_cdmx)
 console.log("Ejercicio 2.6")
 const all_exercices = explorers.reduce((acc, my_explorers_in_list) => acc + my_explorers_in_list.exercises_completed, 0)
 console.log(all_exercices)
+
+console.log("Ejercicio 2.7")
+const explorer_frontend_exercises_finished = explorers.some(frontend => frontend.missions.frontend.exercisesFinished === true)
+console.log(explorer_frontend_exercises_finished)
+
+console.log("Ejercicio 2.8")
+const isFinished_onbording = explorers.every(onFinish => onFinish.missions.onboarding.isFinished === true)
+console.log(isFinished_onbording)
