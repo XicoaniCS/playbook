@@ -40,12 +40,12 @@ const Issues = {
         return `there are a total of ${this.numberOfComments}, ${this.labels} labels and ${this.numberOfComments} coments`
     }
 }
-console.log(repo.getTitleAndAutorIssues())
-console.log(repo.getGeneralInfoIssues())
+console.log(Issues.getTitleAndAutorIssues())
+console.log(Issues.getGeneralInfoIssues())
 
 
 
-console, log("Ejercicio 1.3")
+console.log("Ejercicio 1.3")
 
 const PullRequest = {
     titlePullRequest: "PullRequest LanchX",
@@ -57,5 +57,5 @@ const PullRequest = {
         return `The title is ${this.titlePullRequest} and the author is ${this.author}`
     }
 }
-console.log(repo.PullRequest.status())
-console.log(repo.getTitleAndAutorPullRequest())
+console.log(PullRequest.status)
+console.log(PullRequest.getTitleAndAutorPullRequest())
